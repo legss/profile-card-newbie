@@ -11,25 +11,27 @@
 body {
   font-family: 'Kumbh Sans', sans-serif;
   background-color: hsl(229, 23%, 23%);
-  max-width: 1440px;
 }
-.bg-pattern-top {
+.bolas .bola-cima {
   position: absolute;
-  top: -60%;
-  right: 50%;
+  top: -233px;
+  left: -175px;
 }
-.bg-pattern-bottom {
+.bolas .bola-baixo {
   position: absolute;
-  bottom: -70%;
-  left: 50%;
+  bottom: -233px;
+  right: -175px;
 }
 
 .main {
   background-color: hsl(185, 75%, 39%);
   height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .card {
@@ -41,7 +43,7 @@ body {
 }
 
 .card-top {
-  background-image: url(/images/bg-pattern-card.svg);
+  background-image: url('images/bg-pattern-card.svg');
   height: 150px;
   width: 100%;
 }
